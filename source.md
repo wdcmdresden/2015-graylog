@@ -41,7 +41,7 @@ Zentralisiert loggen
 
 * Einheitliches Interface
 
-* Filter + Aggregationen
+* Filter + Aggregation + Visualisierung
 
 * <abbr title='Service oriented architecture'>SOA</abbr>: Nutzeraktivitäten über eine Vielzahl von Services hinweg nachverfolgen
 
@@ -77,8 +77,11 @@ Centralize all your log messages
 # Wer ist Graylog2
 
 * Deutsches Startup (Hamburg)
+<br>
+<small>
+2013 - Seed finanziert <small> e.ventures, HTGF, Hasso Plattner und Atlantic Capital</small></small>
 
-* OpenSource (GPL)
+* OpenSource (GPL) + Kommerzieller Support
 
 * Java
 
@@ -89,14 +92,18 @@ Centralize all your log messages
 
 ---
 
-# Komponenten
-
-<img class='img-responsive' src='https://www.graylog2.org/assets/images/how_it_works.png'/>
-
+.left-column[ Komponenten ]
+.right-column[
 * Graylog2-Server
 * Graylog2-Web
 * Inputs
 * ElasticSearch + MongoDB
+
+]
+<div class='clear'></div>
+
+<img class='img-responsive' src='https://www.graylog2.org/assets/images/how_it_works.png'/>
+
 
 ---
 
@@ -178,6 +185,7 @@ https://www.graylog2.org/supported-sources
 
 *    syslog-ng
 *    rsyslog
+*    GELF over HTTP
 
 ]
 
@@ -249,4 +257,4 @@ template: inverse
 **Stefan Wienert**
 
 pludoni GmbH
-
+d.clear
