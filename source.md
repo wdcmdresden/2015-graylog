@@ -41,7 +41,7 @@ Zentralisiert loggen
 
 * Einheitliches Interface
 
-* Filter + Aggregation + Visualisierung
+* Filter + Aggregation + Visualisierung + Alerts
 
 * <abbr title='Service oriented architecture'>SOA</abbr>: Nutzeraktivitäten über eine Vielzahl von Services hinweg nachverfolgen
 
@@ -85,7 +85,7 @@ Centralize all your log messages
 
 * Java
 
-* Aktuell: Version 0.92
+* Aktuell: Version 0.92 (1.0.0 beta)
   <br> 3200 Commits
   <br> 1100 Stars auf Github
   <br> seit ca. 2010
@@ -196,6 +196,18 @@ template: inverse
 
 # Live-Demo
 
+???
+
+http://ec2-54-93-59-43.eu-central-1.compute.amazonaws.com/
+
+```
+logger --priority local0.info "Hello World"
+```
+
+```
+curl -XPOST localhost:12201/gelf -p0 -d '{"short_message":"Hello there", "host":"example.org", "facility":"test", "_foo":"bar"}' -v
+```
+
 
 ---
 
@@ -244,7 +256,8 @@ Zentralisiert loggen
   * Fluentd
 * Hosted
   * Papertrail
-* <a href='http://jasonwilder.com/blog/2012/01/03/centralized-logging/'>Mehr</a>
+  * NewRelic
+* <a href='http://jasonwilder.com/blog/2012/01/03/centralized-logging/'>Mehr</a>, <a href='http://blog.takipi.com/the-7-log-management-tools-you-need-to-know/'>Noch mehr</a>
 
 ]
 
@@ -257,4 +270,7 @@ template: inverse
 **Stefan Wienert**
 
 pludoni GmbH
-d.clear
+
+<a href='https://twitter.com/stefanwienert'>@stefanwienert</a> / github.com/zealot128
+
+[Ansible Playbook Demo-Server]( https://github.com/zealot128/wdcm-graylog-exampleserver)
